@@ -1,0 +1,14 @@
+private int calculatePrice(int quantity) {
+	}
+	- private = Access modifier
+	- int = Return data type
+	- calculatePrice = Method name
+	- int = parameter 1 data type
+	- quantity = parameter 1 variable name
+
+Private/public = access modifiers, private/public to main activity.
+ - Public static - can be accessed from within the class as well as outside the class.
+ - Private static - can be access from within the class only.
+
+Method names should begin with a verb
+Inputs passed to a method are called arguments

@@ -107,3 +107,4 @@ Hard-coding a value (assigning dp's) is generally regarded as bad practice. Use 
 
 >How to center:
 - textview within a linearlayout: make width or height match_parent, then type android:gravity="center".
+

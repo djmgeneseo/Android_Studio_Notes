@@ -1,0 +1,48 @@
+Java object = TextView
+	- State is madeup of fields. A field is a variable; int, string, etc.
+	- Methods from TextView = setText(), getText(), onDraw(). 
+ImageView
+	- Methods, such as setImage(), setScaleType(), onDraw().
+
+Can use a class (TextView class, for instance) to create many TextView object
+instances. 
+
+Classes will start with capital letter, and camel case
+	- Member Variables - field, or state of class. 
+		> Ex) private int mImageId; 
+	Inside the class ImageView is the method: 
+		
+		public void setImage(int imageId) {
+			mImageId = imageId;	
+		}
+
+Context = way to access information about the app. 
+
+Call a constructor:
+	int quantity = 2;
+	data type, variable name, initial value.
+	
+	TextView priceTextView = new TextView(context);
+	- context object helps access application resources. 
+	
+	Button submitOrderButton = new Button(context);
+	
+	CatView sleepyCatView = new CatView("Tiger);
+
+(Need to look at class source file to check what arguments to pass through upon construction)
+
+Some classes require a Factory Method for construction: 
+	Object data Type, Variable name = object Data type.Factory Method Name(Input Args)
+	
+	MediaPlayer player = MediaPlayer.create(context, R.raw.song)
+
+Call method on object: object variable name.method name(input args).
+	- titleTextView.setText("News");
+
+Inside a class, use this.setText("Hello");
+outside a class, use titleTextView.setText("Hello);
+
+TextView priceTextView = (TextView) findViewById(R.id.order_summary_text_view);
+	- findViewById(R.id.order_summary_text_view) = returns a view
+	- (TextView)  = casts into TextView type, because TextView is a child of View
+
