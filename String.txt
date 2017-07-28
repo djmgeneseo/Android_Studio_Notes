@@ -1,0 +1,10 @@
+Escape characters (sequences)
+	- A character preceded by a backslash
+	- \t inserts a tab
+	- \b inserts a backspace
+	- \n insert a new line 
+	- \r insert a carriage return
+	- \f insert a formfeed
+	- \' insert a single quote character
+	- \" insert a double quote character
+	- \\ insert a backslash

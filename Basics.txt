@@ -1,0 +1,11 @@
+Declare: int total;
+Initialize: total = 10;
+Concatenation: String father = "hello, " + "my " + "son."
+			   father = father + " How are you?"
+
+PEMDAS matters in Java 
+int day1 = 15, day2 = 22, day 3 = 18; 
+display(day1+day2+day3/3); 
+
+This won't calculate the average. Need:
+	display((day1+day2+day3)/3);
