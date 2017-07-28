@@ -1,0 +1,9 @@
+Resource Type	Java Code	XML
+
+Image 	R.drawable.photo 	@drawable/photo
+String	R.string.hello		@string/hello
+Layout XML file	R.layout.activity_main	@layout/activity.main
+ID	R.id.price_text_view	@id/price_text_view
+Color	R.color.red		@color/red
+
+
