@@ -1,0 +1,16 @@
+Interface = not implemented at all
+	- No state
+	- All methods are abstract (not implemented). 
+	- Abstract methods are intentionally left blank so that developers can provide instructions for those methods: "Fill in the blank for when a view is clicked on."
+	- Method signatures return value, method name, input parameters.
+
+	> For Event Listener:
+		1. Define the event listener (and the custom behavior for when the event happens):
+	
+		2. Create a new object instance of the event listener (using the constructor)
+		3. Attach the listener to the view
+
+Concrete Class = fully implemented
+	- Contains state
+	- Methods are fully implemented
+

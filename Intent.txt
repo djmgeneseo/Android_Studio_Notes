@@ -1,0 +1,31 @@
+https://developer.android.com/guide/components/intents-common.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+
+An intent = a message that requests action to be performed by another app. 
+	- Contains an Action and Data to act upon.
+		- Data URI = Uniform Resource Identifier
+	- Can add category, component, and extras (extra information)
+	- 
+
+Send intent to launch another app
+	- Doesn't matter which app; if you're asking to open the website on a browser, the device will open any web browser app
+
+Intent intent = new Intent(Intent.ACTION_VIEW);
+    intent.setData(Uri.parse("geo:47.6, -122.3"));
+    
+  Map app:
+    //Checking to see if there's a component on device that can handle this intent. Does not perform intent if none exist, to prevent app from crashing.
+    if (intent.resolveActivity(getPackageManager()) != null) {
+        startActivity(intent);
+    }
+
+  Email App:
+
+  	private void displayMessage(String message) {
+        // Show 'Order Summary' View
+        View orderSummary = findViewById(R.id.orderSummary);
+        orderSummary.setVisibility(View.VISIBLE);
+
+        // Show 'Order Summary Text' View
+        TextView priceTextView = (TextView) findViewById(R.id.order_summary_text_view);
+        priceTextView.setText(message);
+        priceTextView.setVisibility(View.VISIBLE);

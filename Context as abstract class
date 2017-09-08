@@ -1,0 +1,14 @@
+Context class = abstract class (Cannot be directly accessed; branches into subclasses)
+	- Activity class extends Class. 
+	- Can use getApplication(), getApplicationContext()
+	- Any method that calls for Context class must have passed into it a class that implements the abstract class, Context
+
+Toast.makeText(getApplication(), "Hello", Toast.LENGTH_LONG).show();
+or
+Toast.makeText(this, "Hello", Toast.LENGTH_LONG).show();
+or
+Toast.makeText(MainActivity.this, "Hello", Toast.LENGTH_LONG).show;
+
+Can access pretty much any resource from MainActivity.this. (etc.)
+or
+Log.v(TAG, getApplicationContext().getString(R.string.app_name));

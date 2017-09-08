@@ -1,0 +1,6 @@
+Log - shows message in console
+Log.d() 
+public static final String TAG = "MainActivity";
+Log.d(TAG, "Hello From Calculate Method");
+
+Log.v = verbose. 

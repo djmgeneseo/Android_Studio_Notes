@@ -18,3 +18,7 @@ EditText nameEditText = (EditText) findViewById(R.id.nameField);
 String name = nameEditText.getText().toString();
 so first, return of nameEditText.getText(), then that is sent into toString() method,
 which returns a value and stores it into the name variable
+
+ctrl + \
+	- Comments out highlighted selection
+	
